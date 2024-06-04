@@ -1,0 +1,154 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../../image/Index-page/Zoo-4K.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #1a4301;
+    padding: 20px;
+}
+  
+header p{
+    margin: 0;
+    text-align: right;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a4301;
+    padding: 10px;
+}
+
+nav img {
+    width: 100px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+  
+nav ul li {
+    margin-right: 20px;
+}
+  
+nav ul li:last-child {
+    margin-right: 0;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #a5df50;
+}
+  
+nav ul li a:hover {
+    color: #d9ffa4;
+}
+
+/* Navbar hover effects */
+nav ul li a:after{
+    content: "";
+    position: relative;
+    width: 0%;
+    height: 2.5px;
+    border-radius: 5px;
+    display: block;
+    transition: all 0.4s ease;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    height: 2.5px;
+    border-radius: 5px;
+    background-color: #d9ffa4;
+}
+  
+/* Dropdown styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #31572C;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    display: block;
+    color: #4F772D;
+    padding: 10px;
+    text-decoration: none;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+/* Main section styles */
+main {
+    margin: 40px;
+}
+  
+section {
+    margin-bottom: 20px;
+    border: 2px solid rgba(165, 223, 80, 0.4);
+    display: inline-block;
+    padding: 20px;
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+  
+h2 {
+    color: #3eff45;
+}
+  
+p {
+    color: rgb(165, 223, 80);
+}
+  
+button{
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #aff39e;
+}
+  
+button a{
+    color: #aeff9c;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #aff39e;
+    transition: all 0.4s ease;
+}
+button:hover a{
+    color: rgb(37, 92, 0)
+}
+#addbtn{
+    margin-left: 56.7%;
+}
+
+/* Footer styles */
+footer {
+    background-color: #31572C;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+}
